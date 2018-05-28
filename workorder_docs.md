@@ -20,8 +20,7 @@
 |参数|类型|必须|说明|
 |----|----|----|----|
 |support|int|yes|是否需要电话支持|
-|type|varchar|yes|工单类型,("sys", "系统故障"),
-        ("licences", "配额")|
+|type|varchar|yes|工单类型,("sys", "系统故障"),("licences", "配额")|
 |question|varchar|yes|工单问题描述|
 
 **返回参数**
@@ -47,6 +46,7 @@
 
 **返回参数说明**
 
+|----|----|----|
 |参数|类型|说明|
 |committer|varchar|工单提交人|
 |id|int|工单编号|
