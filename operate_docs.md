@@ -10,6 +10,7 @@
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 
@@ -19,6 +20,7 @@
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 
@@ -33,8 +35,10 @@ GET /v3_1/operate/user_list/?page=1&page_size=10&user_name=cui&phone=1234567890
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
+|app_id|varchar|yes|应用id|
 |page|int|yes|页数|
 |page_size|int|yes|每页数量|
 |user_name|varchar|no|根据用户名搜索|
@@ -66,6 +70,7 @@ GET /v3_1/operate/user_list/?page=1&page_size=10&user_name=cui&phone=1234567890
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |enduser_id|varchar|用户id|
@@ -85,8 +90,10 @@ GET /v3_1/operate/user_list/?page=1&page_size=10&user_name=cui&phone=1234567890
 GET /v3_1/operate/user_device/?enduser_id=01234567880
 ```
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
+|app_id|varchar|yes|应用ID|
 |enduser_id|int|yes|终端用户id|
 
 **返回参数**
@@ -117,6 +124,7 @@ GET /v3_1/operate/user_device/?enduser_id=01234567880
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |enduser_id|varchar|终端用户id|
@@ -138,8 +146,10 @@ GET /v3_1/operate/device_list/?page=1&page_size=10&dvice_id=&dsn=
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
+|app_id|varchar|yes|应用id|
 |page|int|yes|页数|
 |page_size|int|yes|每页数量|
 |device_id|varchar|no|根据设备ID搜索|
@@ -171,6 +181,7 @@ GET /v3_1/operate/device_list/?page=1&page_size=10&dvice_id=&dsn=
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |device_id|varchar|设备编号|
@@ -190,7 +201,9 @@ GET /v3_1/operate/feedback_list/?page=1&page_size=10
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
+|app_id|varchar|yes|应用id|
 |----|----|----|----|
 |page|int|yes|页数|
 |page_size|int|yes|每页数量|
@@ -221,6 +234,7 @@ GET /v3_1/operate/feedback_list/?page=1&page_size=10
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |user|varchar|反馈用户|
@@ -240,8 +254,10 @@ GET /v3_1/operate/feedback_message/?page=1&page_size=10&feedback_id=3
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
+|app_id|varchar|yes|应用id|
 |page|int|yes|页数|
 |page_size|int|yes|每页数量|
 |feedbace_id|int|yes|反馈id|
@@ -270,6 +286,7 @@ GET /v3_1/operate/feedback_message/?page=1&page_size=10&feedback_id=3
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |feedback_id|int|反馈编号|
@@ -290,8 +307,10 @@ GET /v3_1/operate/feedback_message/?page=1&page_size=10&feedback_id=3
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
+|app_id|varchar|yes|应用id|
 |message|json|yes|反馈消息|
 |feedbace_id|int|yes|反馈id|
 
@@ -312,6 +331,7 @@ GET /v3_1/operate/feedback_message/?page=1&page_size=10&feedback_id=3
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |feedback_id|int|反馈编号|
