@@ -9,6 +9,7 @@
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 
@@ -18,6 +19,7 @@
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 
@@ -28,7 +30,7 @@
 
 **请求示例**
 ```
-> GET /v3_1/statistics/overview/
+> GET /v3_1/statistics/overview/?app_id=fklg43km4j3klg4lvler4f
 ```
 
 **返回参数**
@@ -102,6 +104,7 @@
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |:----:|:----:|:----:|
 |active_devices|int|激活设备数量|
@@ -119,7 +122,7 @@
 
 **请求示例**
 ```
-GET /v3_1/statistics/overview/device_map/
+GET /v3_1/statistics/overview/device_map/?app_id=lergfemlgerklgerlgergreg
 ```
 
 **返回参数**
@@ -144,6 +147,7 @@ GET /v3_1/statistics/overview/device_map/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |:----:|:----:|:----:|
 |location|string|位置编码|
@@ -156,12 +160,14 @@ GET /v3_1/statistics/overview/device_map/
 
 **请求示例**
 ```
-GET /v3_1/statistics/activation_count/?start_date=2017-12-30&end_date=2018-02-06&product_id=flglkkd
+GET /v3_1/statistics/activation_count/?start_date=2017-12-30&end_date=2018-02-06&product_id=flglkkd&app_id=lfewlkflefldvdv
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |:----:|:----:|:----:|:----:|
+|app_id|varchar|yes|应用id|
 |product_id|varchar|no|产品编号,无product_id参数表示所有产品,多个产品需携多个产品ID|
 |start_date|varchar|yes|起始日期,格式:2018-01-01|
 |end_date|varchar|yes|结束日期,格式:2018-02-01|
@@ -188,6 +194,7 @@ GET /v3_1/statistics/activation_count/?start_date=2017-12-30&end_date=2018-02-06
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |:----:|:----:|:----:|
 |count|int|各产品每日激活设备数,数据结构为{产品:{日期:激活设备数量}}|
@@ -200,12 +207,14 @@ GET /v3_1/statistics/activation_count/?start_date=2017-12-30&end_date=2018-02-06
 
 **请求示例**
 ```
-GET /v3_1/statistics/activation_list/?page=1&page_size=10&product_id=flglkkd&product_id=435fdgdg
+GET /v3_1/statistics/activation_list/?page=1&page_size=10&product_id=flglkkd&product_id=435fdgdg&app_id=rrlekfelfedlefnhsdjklcds
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |:----:|:----:|:----:|:----:|
+|app_id|varchar|yes|应用id|
 |product_id|varchar|no|产品编号,无product_id参数表示所有产品,多个产品需携带多个产品ID|
 |page|int|no|页码,最大为10页,默认为1|
 |page_size|int|no|每页数量,默认为10|
@@ -243,6 +252,7 @@ GET /v3_1/statistics/activation_list/?page=1&page_size=10&product_id=flglkkd&pro
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |:----:|:----:|:----:|
 |day_count|int|产品每日激活设备数|
@@ -256,16 +266,18 @@ GET /v3_1/statistics/activation_list/?page=1&page_size=10&product_id=flglkkd&pro
 **请求示例**
 * 设备分布地图统计
 ```
-GET /v3_1/statistics/region_count/?product_id=lfkdslf4kj&type=count
+GET /v3_1/statistics/region_count/?product_id=lfkdslf4kj&type=count&app_id=lfkgerlfmvdfl
 ```
 * 设备分布详情
 ```
-GET /v3_1/statistics/region_count/?product_id=ldkjgk32254dfk&type=detail&page=1&page_size=10
+GET /v3_1/statistics/region_count/?product_id=ldkjgk32254dfk&type=detail&page=1&page_size=10&app_id=rekgdflfdvd
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |:----:|:----:|:----:|:----:|
+|app_id|varchar|yes|应用id|
 |product_id|varchar|no|产品编号,无product_id参数表示所有产品|
 |type|varchar|yes|请求类型,count(设备分布统计),detail(设备分布详情)|
 |page|int|no|页码|
@@ -337,6 +349,7 @@ GET /v3_1/statistics/region_count/?product_id=ldkjgk32254dfk&type=detail&page=1&
 
 
 **返回参数说明**
+
 |参数|类型|说明|
 |:----:|:----:|:----:|
 |location|string|地区编码|
@@ -350,7 +363,7 @@ GET /v3_1/statistics/region_count/?product_id=ldkjgk32254dfk&type=detail&page=1&
 
 **请求示例**
 ```
-GET /v3_1/statistics/product_list/
+GET /v3_1/statistics/product_list/?app_id=krelfmewlfmdslfef
 ```
 
 
@@ -380,6 +393,7 @@ GET /v3_1/statistics/product_list/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |:----:|:----:|:----:|
 |name|varchar|产品名称|
