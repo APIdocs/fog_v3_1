@@ -1,9 +1,9 @@
 # 移动端 产品接口文档
 
 ## HOST 说明
-* 开发测试 host: https://cnapitest.fogcloud.io
+* dev host: https://cnapitest.fogcloud.io
 * api prefix: /v3_1/
-* 完整 请求path: host + prefix + api
+* entirely request path: host + prefix + api
 
 ---
 ## 应用下产品类别 接口(JWT认证)
