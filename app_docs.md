@@ -10,6 +10,7 @@
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 
@@ -19,6 +20,7 @@
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 
@@ -43,6 +45,7 @@ POST /v3_1/app/app_info/
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_name|varchar|yes|应用名称|
@@ -88,6 +91,7 @@ POST /v3_1/app/app_info/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_name|varchar|应用名称|
@@ -110,6 +114,7 @@ GET /v3_1/app/app_info/?app_id=7d38d76aea1611e79918000c299d4a8e
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用编号|
@@ -147,6 +152,7 @@ GET /v3_1/app/app_info/?app_id=7d38d76aea1611e79918000c299d4a8e
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_name|varchar|应用名称|
@@ -207,6 +213,7 @@ GET /v3_1/app/app_list/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_name|varchar|应用名称|
@@ -242,6 +249,7 @@ PUT /v3_1/app/app_info/
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_name|varchar|no|应用名称|
@@ -275,6 +283,7 @@ PUT /v3_1/app/app_info/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_name|varchar|应用名称|
@@ -297,6 +306,7 @@ GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|是|应用ID|
@@ -320,6 +330,7 @@ GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用ID|
@@ -343,6 +354,7 @@ GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用ID|
@@ -364,6 +376,7 @@ GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 ```
 
 ## 获取语言列表 接口
+
 **接口地址**
 > GET /v3_1/app/language/
 
@@ -402,6 +415,7 @@ GET /v3_1/app/language/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|语言编号|
@@ -420,6 +434,7 @@ GET /v3_1/app/template_base_list/?language=3
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |language|int|yes|语言编号|
@@ -445,6 +460,7 @@ GET /v3_1/app/template_base_list/?language=3
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|模板编号|
@@ -482,6 +498,7 @@ GET /v3_1/app/template_base_list/?language=3
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |template_base_id|int|yes|语言基础模板编号|
@@ -516,6 +533,7 @@ GET /v3_1/app/template_base_list/?language=3
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 
@@ -530,6 +548,7 @@ GET /v3_1/app/app_language_temp_list/?app_id=c137c330f03411e7bb63000c299d4a8e&la
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -558,6 +577,7 @@ GET /v3_1/app/app_language_temp_list/?app_id=c137c330f03411e7bb63000c299d4a8e&la
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|模板id|
@@ -579,6 +599,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -599,6 +620,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -619,6 +641,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -640,6 +663,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -664,6 +688,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -695,6 +720,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -716,6 +742,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -741,6 +768,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -769,6 +797,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -799,6 +828,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -828,6 +858,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -859,6 +890,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -880,6 +912,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -905,6 +938,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -933,6 +967,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -964,6 +999,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -993,6 +1029,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1023,6 +1060,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1044,6 +1082,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1069,6 +1108,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1097,6 +1137,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1128,6 +1169,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1154,6 +1196,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1178,6 +1221,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1195,6 +1239,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1218,6 +1263,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1264,6 +1310,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1296,6 +1343,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1339,6 +1387,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 
@@ -1368,6 +1417,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1406,6 +1456,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 
 ## 获取关于界面 接口
+
 **接口地址**
 > GET /v3_1/app/about_interface/
 
@@ -1416,6 +1467,7 @@ GET /v3_1/app/about_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1447,6 +1499,7 @@ GET /v3_1/app/about_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1473,6 +1526,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1495,6 +1549,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1518,6 +1573,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1541,6 +1597,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1565,6 +1622,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
@@ -1588,6 +1646,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用id|
@@ -1606,6 +1665,7 @@ GET  /v3_1/app/interface_base/?interface=help&language_id=1
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |interface|varchar|yes|界面名称，可选(general,main,settings,device,about,help)|
@@ -1649,6 +1709,7 @@ app_id字段为默认参数无实际意义
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用编号|
@@ -1678,6 +1739,7 @@ GET /v3_1/app/version_list/?app_id=
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用编号|
@@ -1707,6 +1769,7 @@ GET /v3_1/app/version_list/?app_id=
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用编号|
@@ -1725,6 +1788,7 @@ GET /v3_1/app/version_info/?app_id=&version=
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用编号|
@@ -1750,6 +1814,7 @@ GET /v3_1/app/version_info/?app_id=&version=
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |app_id|varchar|应用编号|
