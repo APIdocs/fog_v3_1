@@ -6,10 +6,10 @@
 * 完整 请求path: host + prefix + api
 
 ---
-## 应用下产品类别 接口
+## 应用下产品类别 接口(JWT认证)
 **接口地址**
 
-> GET /enduser/product/category/(JWT认证)
+> GET /enduser/product/category/
  
  **请求参数示例**
  ```
