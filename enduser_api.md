@@ -112,8 +112,8 @@ GET /v3_1/enduser/product/voiceSupport/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **请求参数说明**
-|参数|类型|必须|说明|
 
+|参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|是|应用id|
 
@@ -154,8 +154,8 @@ GET /v3_1/enduser/app/aboutApp/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 * 现移动端未配置语言，默认英文的语言id为1,中文的语言id为2
 
 **请求参数说明**
-|参数|类型|必须|说明|
 
+|参数|类型|必须|说明|
 |----|----|----|----|
 |app_id|varchar|yes|应用id|
 |language_id|int|yes|语言编号|
