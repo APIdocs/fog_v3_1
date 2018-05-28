@@ -24,6 +24,7 @@
 ```
 
 **请求参数说明**
+
 | 参数 | 类型 | 必须 | 说明 |
 | ---- | ---- | ---- | ---- |
 |name|varchar|是|产品名称|
@@ -78,6 +79,7 @@ version|int|是|产品版本|
     }
 ```
 **请求参数说明**
+
 | 参数　| 类型 | 必须 | 说明 |
 | ---- | ---- | ---- | ----|
 |name|varchar|否|产品名称|
@@ -121,6 +123,7 @@ GET /v3_1/product/product_info/?product_id=67da0c26e61b11e79918000c299d4a8e
 ```
 
 **请求参数**
+
 | 参数　| 类型 | 必须 | 说明 |
 | ---- | ---- | ---- | ----|
 |product_id|varchar|是|产品ID|
@@ -146,6 +149,7 @@ GET /v3_1/product/product_info/?product_id=67da0c26e61b11e79918000c299d4a8e
 ```
 
 **返回参数说明**
+
 | 参数　| 类型 | 必须 | 说明 |
 | ---- | ---- | ---- | ----|
 |product_id|varchar|否|产品ID|
@@ -198,6 +202,7 @@ GET /v3_1/product/product_list/?app_id=fdlgjkl566
 ```
 
 ** 返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |name|varchar|产品名称|
@@ -241,6 +246,7 @@ GET /v3_1/product/product_class_list/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|产品类别编号|
@@ -275,6 +281,7 @@ GET /v3_1/product/product_class_list/?class_id=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|产品类别编号|
@@ -310,6 +317,7 @@ GET /v3_1/product/product_class_info/?class_id=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|产品类别编号|
@@ -338,6 +346,7 @@ POST /v3_1/product/function_info/
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |identifier|varchar|是|参数标识|
@@ -362,6 +371,7 @@ POST /v3_1/product/function_info/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|产品类别编号|
@@ -394,6 +404,7 @@ PUT /v3_1/product/function_info/?function_id=1
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |identifier|varchar|否|参数标识|
@@ -418,6 +429,7 @@ PUT /v3_1/product/function_info/?function_id=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|产品类别编号|
@@ -454,6 +466,7 @@ GET /v3_1/product/function_info/?function_id=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|产品类别编号|
@@ -556,6 +569,7 @@ GET /v3_1/product/product_version_list/?category=5
 ```
 
 **请求参数**
+
 |参数|类型|必须|说明|
 |:----:|:----:|:----:|:----:|
 |category|int|yes|产品类别id|
@@ -581,6 +595,7 @@ GET /v3_1/product/product_version_list/?category=5
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|版本ID|
@@ -615,6 +630,7 @@ GET /v3_1/product/product_version_info/?version_id=1
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|版本ID|
@@ -657,6 +673,7 @@ GET /v3_1/product/region_list/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|地区id|
@@ -678,6 +695,7 @@ POST /v3_1/product/product_region/
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |product_id|varchar|yes|产品id|
@@ -705,6 +723,7 @@ GET /v3_1/product/product_region_info/?product_id=7405d040f9bf11e7998d000c299d4a
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |product_id|varchar|yes|产品id|
@@ -734,6 +753,7 @@ GET /v3_1/product/product_region_info/?product_id=7405d040f9bf11e7998d000c299d4a
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |product_id|varchar|产品id|
@@ -777,6 +797,7 @@ GET /v3_1/product/qingke_module/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|模块id|
@@ -848,6 +869,7 @@ GET /v3_1/product/qingke_module/
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |type|varchar|yes|提交量产工单类型,("module","购买云模块"),("test","测试支持"),("tech","技术支持")|
@@ -882,6 +904,7 @@ GET /v3_1/product/qingke_module/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |type|varchar|提交量产工单类型,("module","购买云模块"),("test","测试支持"),("tech","技术支持"),("voice", "语音支持")|
@@ -905,6 +928,7 @@ GET /v3_1/product/voice_support/?product_id=90909gfd90fdfdo0304
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |product_id|varchar|yes|产品id|
@@ -926,6 +950,7 @@ GET /v3_1/product/voice_support/?product_id=90909gfd90fdfdo0304
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |ali_genie|int|支持天猫精灵, 1(开通)， 0(关闭),2(开通中)|
@@ -949,6 +974,7 @@ GET /v3_1/product/voice_support/?product_id=90909gfd90fdfdo0304
 * voice_vendor 对应要开通的语音供应商
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |voice_status|int|yes|支持google home音箱, 1(开通)， 0(关闭)|
@@ -975,6 +1001,7 @@ GET /v3_1/product/voice_support/?product_id=90909gfd90fdfdo0304
 * 返回码为10170,代表first开通,提醒提交工单
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |ali_genie|int|支持天猫精灵, 1(开通)， 0(关闭),2(开通中)|
@@ -993,6 +1020,7 @@ GET /v3_1/product/help_support/?product_id=43255fdklfgl34jklrl44
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |product_id|varchar|yes|产品id|
@@ -1028,6 +1056,7 @@ GET /v3_1/product/help_support/?product_id=43255fdklfgl34jklrl44
 * 分页需携带page和page_size参数
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 
@@ -1050,6 +1079,7 @@ GET /v3_1/product/help_support/?product_id=43255fdklfgl34jklrl44
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |product_id|varchar|yes|产品id|
@@ -1074,6 +1104,7 @@ GET /v3_1/product/help_support/?product_id=43255fdklfgl34jklrl44
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|帮助信息id|
@@ -1091,6 +1122,7 @@ GET /v3_1/product/help_support/?product_id=43255fdklfgl34jklrl44
 GET /v3_1/product/help_support/7/
 ```
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |id|int|yes|帮助信息id|
@@ -1113,6 +1145,7 @@ GET /v3_1/product/help_support/7/
 ```
 
 **返回参数说明**
+
 |参数|类型|说明|
 |----|----|----|
 |id|int|帮助信息id|
@@ -1132,6 +1165,7 @@ GET /v3_1/product/help_support/7/
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |status|varchar|yes|帮助支持发布状态，draft(草稿), publish(发布)|
@@ -1161,6 +1195,7 @@ DELETE /v3_1/product/help_support/6/?product_id=delkf31fg1
 ```
 
 **请求参数说明**
+
 |参数|类型|必须|说明|
 |----|----|----|----|
 |id|int|yes|帮助编号|
