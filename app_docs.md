@@ -1,5 +1,11 @@
 # 应用模块　接口文档
 
+## HOST 说明
+* dev host: https://cnapitest.fogcloud.io
+* production host: https://cnapi.fogcloud.io
+* api prefix: /v3_1
+* entirely api path: host + prefix + api
+
 ## 
 **接口地址**
 > 
@@ -27,11 +33,11 @@
 ## 新建应用　接口
 
 **接口地址**
-> POST /v3_1/app/app_info/
+> POST /app/app_info/
 
 **请求参数**
 ```
-POST /v3_1/app/app_info/
+POST /app/app_info/
 
 {
     "app_name": "test",
@@ -106,11 +112,11 @@ POST /v3_1/app/app_info/
 
 ## 获取应用详情　接口
 **接口地址**
-> GET /v3_1/app/app_info/
+> GET /app/app_info/
 
 **请求参数**
 ```
-GET /v3_1/app/app_info/?app_id=7d38d76aea1611e79918000c299d4a8e
+GET /app/app_info/?app_id=7d38d76aea1611e79918000c299d4a8e
 ```
 
 **请求参数说明**
@@ -168,11 +174,11 @@ GET /v3_1/app/app_info/?app_id=7d38d76aea1611e79918000c299d4a8e
 
 ## 获取应用列表　接口 
 **接口地址**
-> GET /v3_1/app/app_list/
+> GET /app/app_list/
 
 **请求参数**
 ```
-GET /v3_1/app/app_list/
+GET /app/app_list/
 ```
 
 **返回参数**
@@ -228,11 +234,11 @@ GET /v3_1/app/app_list/
 
 ## 更新应用信息　接口
 **接口地址**
-> PUT /v3_1/app/app_info/
+> PUT /app/app_info/
 
 **请求参数**
 ```
-PUT /v3_1/app/app_info/
+PUT /app/app_info/
 
 {   
     "app_id": "4325fkkl",
@@ -298,11 +304,11 @@ PUT /v3_1/app/app_info/
 
 ## 获取证书 接口
 **接口地址**
-> GET /v3_1/app/certificate/
+> GET /app/certificate/
 
 **请求参数**
 ```
-GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
+GET /app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 ```
 
 **请求参数说明**
@@ -342,7 +348,7 @@ GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 
 ## 上传证书 接口 
 **接口地址**
-> POST /v3_1/app/certificate/
+> POST /app/certificate/
 
 **请求参数**
 ```
@@ -378,11 +384,11 @@ GET /v3_1/app/certificate/?app_id=437ce59eec5e11e7af9b000c299d4a8e
 ## 获取语言列表 接口
 
 **接口地址**
-> GET /v3_1/app/language/
+> GET /app/language/
 
 **请求参数**
 ```
-GET /v3_1/app/language/
+GET /app/language/
 ```
 
 **返回参数**
@@ -426,11 +432,11 @@ GET /v3_1/app/language/
 
 ## ~~获取基础语言模板列表 接口~~
 **接口地址**
-> GET /v3_1/app/template_base_ist/
+> GET /app/template_base_ist/
 
 **请求参数**
 ```
-GET /v3_1/app/template_base_list/?language=3
+GET /app/template_base_list/?language=3
 ```
 
 **请求参数说明**
@@ -472,7 +478,7 @@ GET /v3_1/app/template_base_list/?language=3
 
 ## ~~自定义应用语言模板 接口~~
 **接口地址**
-> POST /v3_1/app/app_language_temp/
+> POST /app/app_language_temp/
 
 **请求参数**
 ```
@@ -540,11 +546,11 @@ GET /v3_1/app/template_base_list/?language=3
 
 ## ~~应用语言模板列表 接口~~
 **接口地址**
-> GET /v3_1/app/app_language_temp_list/
+> GET /app/app_language_temp_list/
 
 **请求参数**
 ```
-GET /v3_1/app/app_language_temp_list/?app_id=c137c330f03411e7bb63000c299d4a8e&language=3
+GET /app/app_language_temp_list/?app_id=c137c330f03411e7bb63000c299d4a8e&language=3
 ```
 
 **请求参数说明**
@@ -591,11 +597,11 @@ GET /v3_1/app/app_language_temp_list/?app_id=c137c330f03411e7bb63000c299d4a8e&la
 
 ## 获取应用图标
 **接口地址**
-> GET /v3_1/app/app_icon/
+> GET /app/app_icon/
 
 **请求参数**
 ```
-GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
+GET /app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 ```
 
 **请求参数说明**
@@ -629,7 +635,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 
 ## 上传修改应用图标 接口
 **接口地址**
-> PUT /v3_1/app/app_icon/
+> PUT /app/app_icon/
 
 **请求参数**
 ```
@@ -672,7 +678,7 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 
 ## 新建主界面 接口
 **接口地址**
-> POST /v3_1/app/main_interface/
+> POST /app/main_interface/
 
 **请求参数**
 ```
@@ -733,11 +739,11 @@ GET /v3_1/app/app_icon/?app_id=3375ba62f1cd11e7998d000c299d4a8e
 
 ## 获取主界面 接口
 **接口地址**
-> GET /v3_1/app/main_interface/
+> GET /app/main_interface/
 
 **请求参数**
 ```
-GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
+GET /app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
         
 ```
 
@@ -781,7 +787,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 ## 更新主界面 接口
 **接口地址**
-> PUT /v3_1/app/main_interface/
+> PUT /app/main_interface/
 
 **请求参数**
 ```
@@ -842,7 +848,7 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 ## 新建设置界面 接口
 **接口地址**
-> POST /v3_1/app/settings_interface/
+> POST /app/settings_interface/
 
 **请求参数**
 ```
@@ -903,11 +909,11 @@ GET /v3_1/app/main_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 ## 获取设置界面 接口
 **接口地址**
-> GET /v3_1/app/settings_interface/
+> GET /app/settings_interface/
 
 **请求参数**
 ```
-GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langauge_id=1
+GET /app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langauge_id=1
         
 ```
 
@@ -951,7 +957,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 
 ## 更新设置界面 接口
 **接口地址**
-> PUT /v3_1/app/settings_interface/
+> PUT /app/settings_interface/
 
 **请求参数**
 ```
@@ -1013,7 +1019,7 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 
 ## 新建设备管理界面 接口
 **接口地址**
-> POST /v3_1/app/device_interface/
+> POST /app/device_interface/
 
 **请求参数**
 ```
@@ -1073,11 +1079,11 @@ GET /v3_1/app/settings_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&langau
 
 ## 获取设备管理界面 接口
 **接口地址**
-> GET /v3_1/app/device_interface/
+> GET /app/device_interface/
 
 **请求参数**
 ```
-GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
+GET /app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
         
 ```
 
@@ -1121,7 +1127,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 
 ## 更新设备管理界面 接口
 **接口地址**
-> PUT /v3_1/app/device_interface/
+> PUT /app/device_interface/
 
 **请求参数**
 ```
@@ -1183,7 +1189,7 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 
 ## 新建帮助界面 接口
 **接口地址**
-> POST /v3_1/app/help_interface/
+> POST /app/help_interface/
 
 **请求参数**
 ```
@@ -1231,11 +1237,11 @@ GET /v3_1/app/device_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language
 
 ## 新建帮助界面 接口
 **接口地址**
-> GET /v3_1/app/help_interface/
+> GET /app/help_interface/
 
 **请求参数**
 ```
-GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
+GET /app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
 ```
 
 **请求参数说明**
@@ -1273,7 +1279,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 ## 更新 帮助界面 接口
 **接口地址**
-> PUT /v3_1/app/help_interface/
+> PUT /app/help_interface/
 
 **请求参数**
 ```
@@ -1320,7 +1326,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 ## 新建关于界面 接口
 **接口地址**
-> POST /v3_1/app/about_interface/
+> POST /app/about_interface/
 
 **请求参数**
 ```
@@ -1394,7 +1400,7 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 
 ## 更新关于界面 接口
 **接口地址**
-> PUT /v3_1/app/about_interface/
+> PUT /app/about_interface/
 
 **请求参数**
 ```
@@ -1458,11 +1464,11 @@ GET /v3_1/app/help_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_i
 ## 获取关于界面 接口
 
 **接口地址**
-> GET /v3_1/app/about_interface/
+> GET /app/about_interface/
 
 **请求参数**
 ```
-GET /v3_1/app/about_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
+GET /app/about_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_id=1
 
 ```
 
@@ -1517,11 +1523,11 @@ GET /v3_1/app/about_interface/?app_id=3375ba62f1cd11e7998d000c299d4a8e&language_
 
 ## 获取通用界面 接口
 **接口地址**
-> GET /v3_1/app/general_interface/
+> GET /app/general_interface/
 
 **请求参数**
 ```
-GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
+GET /app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 
 ```
 
@@ -1559,7 +1565,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 
 ## 新建通用界面 接口
 **接口地址**
-> POST  /v3_1/app/general_interface/
+> POST  /app/general_interface/
 
 **请求参数**
 ```
@@ -1608,7 +1614,7 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 
 ## 更新通用界面 接口
 **接口地址**
-> PUT /v3_1/app/general_interface/
+> PUT /app/general_interface/
 
 **请求参数**
 ```
@@ -1657,11 +1663,11 @@ GET /v3_1/app/gernaeral_interface/?app_id=337dfkljdslfjdlsklhdlfs&language_i=1
 
 ## 获取界面默认基础配置 接口
 **接口地址**
-> GET  /v3_1/app/interface_base/
+> GET /app/interface_base/
 
 **请求参数**
 ```
-GET  /v3_1/app/interface_base/?interface=help&language_id=1
+GET  /app/interface_base/?interface=help&language_id=1
 ```
 
 **请求参数说明**
@@ -1696,7 +1702,7 @@ app_id字段为默认参数无实际意义
 
 ## 新建产品版本
 **接口地址**
-> POST /v3_1/app/new_version/
+> POST /app/new_version/
 
 **请求参数**
 ```
@@ -1731,11 +1737,11 @@ app_id字段为默认参数无实际意义
 
 ##  应用版本列表 接口
 **接口地址**
-> GET /v3_1/app/version_list/
+> GET /app/version_list/
 
 **请求参数**
 ```
-GET /v3_1/app/version_list/?app_id=
+GET /app/version_list/?app_id=
 ```
 
 **请求参数说明**
@@ -1779,11 +1785,11 @@ GET /v3_1/app/version_list/?app_id=
 
 ## 应用版本详情 接口
 **接口地址**
-> GET /v3_1/app/version_info/
+> GET /app/version_info/
 
 **请求参数**
 ```
-GET /v3_1/app/version_info/?app_id=&version=
+GET /app/version_info/?app_id=&version=
 
 ```
 
