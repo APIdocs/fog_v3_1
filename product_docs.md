@@ -1298,5 +1298,69 @@ product/enduser_mqtt/f256a5d8237111e8804bfa163e431402/
 }
 ```
 
+------
+## 获取设备topic 接口
+**接口地址**
+> GET /product/device_topic/[device_id]/
 
+**请求示例**
+```
+GET /product/device_topic/1da633bef81811e7804bfa163e431402/
+```
+**返回参数**
+```
+{
+    "meta": {
+        "message": "ok",
+        "code": 0
+    },
+    "data": {
+        "device_id": "1da633bef81811e7804bfa163e431402",
+        "product_id": "d927a33cf75211e7804bfa163e431402",
+        "topic": [
+            {
+                "topic": "$baidu/iot/define/1da633bef81811e7804bfa163e431402/d927a33cf75211e7804bfa163e431402/control/json"
+            },
+            {
+                "topic": "$baidu/iot/define/1da633bef81811e7804bfa163e431402/d927a33cf75211e7804bfa163e431402/command/json"
+            },
+            {
+                "topic": "$baidu/iot/define/1da633bef81811e7804bfa163e431402/d927a33cf75211e7804bfa163e431402/sys/json"
+            }
+        ]
+    }
+  ```
+  
+------
+## 获取用户topic 接口
+**接口地址**
+> GET /product/enduser_topic/[device_id]/
 
+**请求示例**
+```
+GET /product/enduser_topic/1da633bef81811e7804bfa163e431402/
+```
+**返回参数**
+```
+{
+    "meta": {
+        "message": "ok",
+        "code": 0
+    },
+    "data": {
+        "device_id": "1da633bef81811e7804bfa163e431402",
+        "product_id": "d927a33cf75211e7804bfa163e431402",
+        "topic": [
+            {
+                "topic": "$baidu/iot/define/1da633bef81811e7804bfa163e431402/d927a33cf75211e7804bfa163e431402/data/json"
+            },
+            {
+                "topic": "$baidu/iot/define/1da633bef81811e7804bfa163e431402/d927a33cf75211e7804bfa163e431402/status/json"
+            },
+            {
+                "topic": "$baidu/iot/define/1da633bef81811e7804bfa163e431402/d927a33cf75211e7804bfa163e431402/online/json"
+            }
+        ]
+    }
+}
+```
