@@ -1212,4 +1212,91 @@ DELETE /v3_1/product/help_support/6/?product_id=delkf31fg1
 }
 ```
 
+-----
+## Mac地址搜索设备 接口
+**接口地址**
+> GET /product/device_search/[mac]/
+
+**请求示例**
+```
+GET /product/device_search/C89346000031/
+```
+
+**请求参数说明**
+
+
+**返回参数**
+```
+{
+    "meta": {
+        "message": "ok",
+        "code": 0
+    },
+    "data": {
+        "device_id": "a5ac8a1e21e011e8804bfa163e431402",
+        "enduser_id": "f256a5d8237111e8804bfa163e431402",
+        "is_deleted": false,
+        "app_id": "0b4c4e80f73f11e7804bfa163e431402",
+        "alias": "风格"
+    }
+}
+```
+
+------
+## 获取设备MQTT信息 接口
+**接口地址**
+> GET /product/device_mqtt/[device_id]/
+
+**请求示例**
+```
+GET /product/device_mqtt/a5ac8a1e21e011e8804bfa163e431402/
+```
+
+**返回参数**
+```
+{
+    "meta": {
+        "message": "ok",
+        "code": 0
+    },
+    "data": {
+        "device_id": "a5ac8a1e21e011e8804bfa163e431402",
+        "password": "jlV1rTrT8Trc5a2Wg8dzFcN4m3GvJRO1E2sGpJFKieY=",
+        "mqtt_port": 8884,
+        "mqtt_host": "d3ab472a0b84434d8cce01f73025d858.mqtt.iot.gz.baidubce.com",
+        "login_name": "d3ab472a0b84434d8cce01f73025d858/a5ac8a1e21e011e8804bfa163e431402",
+        "client_id": "0bee722e7b4b11e89e92000c29c27f42"
+    }
+}
+```
+
+------
+## 获取用户MQTT信息 接口
+**接口地址**
+> GET /product/enduser_mqtt/[enduser_id]/
+
+**请求示例**
+```
+product/enduser_mqtt/f256a5d8237111e8804bfa163e431402/
+```
+
+**返回参数**
+```
+{
+    "meta": {
+        "message": "ok",
+        "code": 0
+    },
+    "data": {
+        "enduser_id": "f256a5d8237111e8804bfa163e431402",
+        "password": "6wYGgHwYfgLItW9uTIRDcdGmFtORYLrPty+lnMRvXt4=",
+        "mqtt_port": 8884,
+        "mqtt_host": "d3ab472a0b84434d8cce01f73025d858.mqtt.iot.gz.baidubce.com",
+        "login_name": "d3ab472a0b84434d8cce01f73025d858/f256a5d8237111e8804bfa163e431402",
+        "client_id": "b45d59f27b4b11e89e92000c29c27f42"
+    }
+}
+```
+
+
 
